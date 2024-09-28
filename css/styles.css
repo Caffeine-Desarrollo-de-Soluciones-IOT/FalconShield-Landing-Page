@@ -2977,11 +2977,7 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-<<<<<<< HEAD
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
-=======
-  background:#2D6A4F !important;
->>>>>>> 9655aacd6af1248aa069e0fb418dce41587d3e83
+  background: #2d6a4f !important;
   --bs-btn-color: #ffffff;
   --bs-btn-hover-color: #fff;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
@@ -11710,11 +11706,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 element.style {
 }
 .bg-gradient-primary-to-secondary {
-<<<<<<< HEAD
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
-=======
-    background: radial-gradient(circle, #FFFFFF 0%, #B1FE8E 34%) !important;
->>>>>>> 9655aacd6af1248aa069e0fb418dce41587d3e83
+  background: radial-gradient(circle, #ffffff 0%, #b1fe8e 34%) !important;
 }
 .text-center {
   text-align: center !important;
@@ -11864,4 +11856,20 @@ body {
   margin-top: 10px;
   font-size: 18px;
   font-weight: bold;
+}
+.find-us-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.app-logos {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Espacio entre los logos */
+  margin-top: 20px;
+}
+
+.app-logos img {
+  width: 400px; /* Tamaño de los logos */
+  height: auto;
 }
