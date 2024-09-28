@@ -2851,7 +2851,7 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  background:linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  background:#2D6A4F !important;
   --bs-btn-color: #ffffff;
   --bs-btn-hover-color: #fff;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
@@ -8080,7 +8080,7 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-body {
@@ -8171,7 +8171,7 @@ textarea.form-control-lg {
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-body {
@@ -11317,7 +11317,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 element.style {
 }
 .bg-gradient-primary-to-secondary {
-    background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+    background: radial-gradient(circle, #FFFFFF 0%, #B1FE8E 34%) !important;
 }
 .text-center {
     text-align: center !important;
