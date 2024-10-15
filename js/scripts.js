@@ -52,7 +52,8 @@ const texts = {
         about: 'About us',
         title: 'Innovative Security for Your Property',
         subtitle: 'Protect your home with advanced technology and effective solutions from \n Verysafe in Lima, Peru',
-        button: "Get Started"
+        button: "Get Started",
+        phrase: "We provide protection in every corner, so that growth is your only concern"
     },
     es: {
         solutions: 'Soluciones',
@@ -63,7 +64,8 @@ const texts = {
         about: 'Sobre nosotros',
         title: 'Seguridad Innovadora para su Propiedad',
         subtitle: 'Proteja su hogar con tecnología avanzada y soluciones efectivas de \n Verysafe en Lima, Perú',
-        button: "Empezar Ahora!"
+        button: 'Empezar Ahora!',
+        phrase: '"Brindamos protección en cada rincón, para que el crecimiento sea tu única preocupación"'
     }
 };
 
@@ -83,6 +85,7 @@ languageSwitch.addEventListener('change', function() {
         document.getElementById('title-link').textContent = texts.es.title;
         document.getElementById('subtitle-link').textContent = texts.es.subtitle;
         document.getElementById('button-get-link').textContent = texts.es.button;
+        document.getElementById('phrase-link').textContent = texts.es.phrase;
     } else {
         // Cambiar al inglés
         document.getElementById('solutions-link').textContent = texts.en.solutions;
@@ -94,5 +97,6 @@ languageSwitch.addEventListener('change', function() {
         document.getElementById('title-link').textContent = texts.en.title;
         document.getElementById('subtitle-link').textContent = texts.en.subtitle;
         document.getElementById('button-get-link').textContent = texts.en.button;
+        document.getElementById('phrase-link').textContent = texts.en.phrase;
     }
 });
