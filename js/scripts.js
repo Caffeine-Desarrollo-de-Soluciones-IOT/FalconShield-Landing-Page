@@ -51,9 +51,33 @@ const texts = {
         find: 'Find us here!',
         about: 'About us',
         title: 'Innovative Security for Your Property',
-        subtitle: 'Protect your home with advanced technology and effective solutions from \n Verysafe in Lima, Peru',
-        button: "Get Started",
-        phrase: "We provide protection in every corner, so that growth is your only concern"
+        subtitle: 'Protect your home with advanced technology and effective solutions from Verysafe in Lima, Peru',
+        buttonget: 'Get Started',
+        phrase: '"We provide protection in every corner, so that growth is your only concern"',
+        signin: 'Sign In',
+        camera1: 'Security Cameras',
+        camera2: 'We offer Room Service to satisfy your needs and make your stay unforgettable.',
+        sensors1: 'Innovative sensors',
+        sensors2: 'We provide the convenience of booking online, so you can easily plan your stay and make sure you secure your spot at our property.',
+        alarms1: 'Alarms',
+        alarms2: 'We guarantee the security of all your reservations and dispositives rental transactions. Your peace of mind is our priority.',
+        plans: 'Subscription Plans',
+        team: 'Work Team',
+        textteam: 'United and connected',
+        developer: 'Developer',
+        phraseteam: '"As a web development team, we build the future together, always collaborating and supporting each other."',
+        followers: 'Followers',
+        comment: 'Verysafe devices have transformed the security of my property in Lima. Highly recommended!',
+        find: 'Find us here!',
+        aboutus: 'Learn more about us',
+        copy: 'Copyright &copy; FalconShield 2024',
+        privacy: 'Privacy Policy',
+        terms: 'Terms of Use',
+        images: {
+            bronce: 'assets/img/portfolio/bronce.png',
+            premium: 'assets/img/portfolio/premium.png',
+            gold: 'assets/img/portfolio/gold.png'
+        }
     },
     es: {
         solutions: 'Soluciones',
@@ -63,40 +87,72 @@ const texts = {
         find: '¡Encuéntranos aquí!',
         about: 'Sobre nosotros',
         title: 'Seguridad Innovadora para su Propiedad',
-        subtitle: 'Proteja su hogar con tecnología avanzada y soluciones efectivas de \n Verysafe en Lima, Perú',
-        button: 'Empezar Ahora!',
-        phrase: '"Brindamos protección en cada rincón, para que el crecimiento sea tu única preocupación"'
+        subtitle: 'Proteja su hogar con tecnología avanzada y soluciones efectivas de Verysafe en Lima, Perú',
+        buttonget: 'Empezar Ahora!',
+        phrase: '"Brindamos protección en cada rincón, para que el crecimiento sea tu única preocupación"',
+        signin: 'Iniciar Sesión',
+        camera1: 'Cámaras de Seguridad',
+        camera2: 'Ofrecemos Room Service para satisfacer sus necesidades y hacer su estancia inolvidable.',
+        sensors1: 'Sensores Innovadores',
+        sensors2: 'Ofrecemos la comodidad de reservar en línea, para que pueda planificar fácilmente su estadía y asegurarse de asegurar su lugar en nuestra propiedad.',
+        alarms1: 'Alarmas',
+        alarms2: 'Garantizamos la seguridad de todas sus reservas y transacciones de alquiler de dispositivos. Su tranquilidad es nuestra prioridad.',
+        plans: 'Planes de Suscripción',
+        team: 'Equipo de Trabajo',
+        textteam: 'Unidos y conectados',
+        developer: 'Desarrollador',
+        phraseteam: '“Como equipo de desarrollo web, construimos el futuro juntos, siempre colaborando y apoyándonos unos a otros”.',
+        followers: 'Seguidores',
+        comment: 'Los dispositivos Verysafe han transformado la seguridad de mi propiedad en Lima. ¡Muy recomendables!',
+        find: '¡Encuéntranos aquí!',
+        aboutus: 'Conozca más sobre nosotros',
+        copy: 'Derechos de autor &copy; FalconShield 2024',
+        privacy: 'Política de Privacidad',
+        terms: 'Términos de Uso',
+        images: {
+            bronce: 'assets/img/portfolio/broncees.png',
+            premium: 'assets/img/portfolio/premiumes.png',
+            gold: 'assets/img/portfolio/goldes.png'
+        }
+    },
+    pt: {
+
     }
 };
 
-// Selecciona el switch
-const languageSwitch = document.getElementById('language-switch');
+// Seleccionar el switch
+const languageRadios = document.querySelectorAll('input[name="language"]');
 
-// Añadir un evento al switch para detectar cambios
-languageSwitch.addEventListener('change', function() {
-    if (this.checked) {
-        // Cambiar al español
-        document.getElementById('solutions-link').textContent = texts.es.solutions;
-        document.getElementById('subscriptions-link').textContent = texts.es.subscriptions;
-        document.getElementById('team-link').textContent = texts.es.team;
-        document.getElementById('followers-link').textContent = texts.es.followers;
-        document.getElementById('find-link').textContent = texts.es.find;
-        document.getElementById('about-link').textContent = texts.es.about;
-        document.getElementById('title-link').textContent = texts.es.title;
-        document.getElementById('subtitle-link').textContent = texts.es.subtitle;
-        document.getElementById('button-get-link').textContent = texts.es.button;
-        document.getElementById('phrase-link').textContent = texts.es.phrase;
-    } else {
-        // Cambiar al inglés
-        document.getElementById('solutions-link').textContent = texts.en.solutions;
-        document.getElementById('subscriptions-link').textContent = texts.en.subscriptions;
-        document.getElementById('team-link').textContent = texts.en.team;
-        document.getElementById('followers-link').textContent = texts.en.followers;
-        document.getElementById('find-link').textContent = texts.en.find;
-        document.getElementById('about-link').textContent = texts.en.about;
-        document.getElementById('title-link').textContent = texts.en.title;
-        document.getElementById('subtitle-link').textContent = texts.en.subtitle;
-        document.getElementById('button-get-link').textContent = texts.en.button;
-        document.getElementById('phrase-link').textContent = texts.en.phrase;
-    }
+// Función para cambiar el idioma
+function changeLanguage(language) {
+    // Cambiar los textos
+    const elementsToTranslate = document.querySelectorAll('[data-text]');
+    elementsToTranslate.forEach(el => {
+        const key = el.getAttribute('data-text');
+        if (texts[language][key]) {
+            el.innerHTML = texts[language][key];
+        } else {
+            console.warn(`Clave no encontrada para '${key}' en idioma '${language}'`);
+        }
+    });
+
+    // Cambiar las imágenes de acuerdo con el idioma
+    const images = document.querySelectorAll('img[data-img]');
+    images.forEach(img => {
+        const imgKey = img.getAttribute('data-img');  // Obtener el valor de 'data-img'
+        if (texts[language].images[imgKey]) {
+            img.src = texts[language].images[imgKey];  // Cambiar la ruta de la imagen según el idioma
+        } else {
+            console.warn(`No se encontró imagen para '${imgKey}' en idioma '${language}'`);
+        }
+    });
+}
+
+languageRadios.forEach(radio => {
+    radio.addEventListener('change', function () {
+        changeLanguage(this.value);  // Cambiar al idioma seleccionado
+    });
 });
+
+// Establecer el idioma por defecto al cargar la página
+changeLanguage('en');
