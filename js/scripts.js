@@ -116,7 +116,40 @@ const texts = {
         }
     },
     pt: {
-
+        solutions: 'Soluções',
+        subscriptions: 'Subscrição',
+        team: 'Equipe de trabalho',
+        followers: 'Seguidores',
+        find: 'Encontre-nos aqui!',
+        about: 'Sobre nós',
+        title: 'Segurança inovadora para sua propriedade',
+        subtitle: 'Proteja sua casa com tecnologia avançada e soluções eficazes da Verysafe em Lima, Peru',
+        buttonget: 'Começar',
+        phrase: '"Nós fornecemos proteção em cada canto, para que o crescimento seja sua única preocupação"',
+        signin: 'Entrar',
+        camera1: 'Câmeras de segurança',
+        camera2: 'Oferecemos serviço de quarto para satisfazer suas necessidades e tornar sua estadia inesquecível.',
+        sensors1: 'Sensores inovadores',
+        sensors2: 'Oferecemos a conveniência de reservar on-line para que você possa planejar facilmente sua estadia e garantir seu lugar em nossa propriedade.',
+        alarms1: 'Alarmes',
+        alarms2: 'Nós garantimos a segurança de todas as suas reservas e transações de aluguel de dispositivos. Sua paz de espírito é nossa prioridade.',
+        plans: 'Planos de Assinatura',
+        team: 'Equipe de trabalho',
+        textteam: 'Unidos e conectados',
+        developer: 'Desenvolvedor',
+        phraseteam: '"Como uma equipe de desenvolvimento web, construímos o futuro juntos, sempre colaborando e apoiando uns aos outros."',
+        followers: 'Seguidores',
+        comment: 'Os dispositivos Verysafe transformaram a segurança da minha propriedade em Lima. Altamente recomendado!',
+        find: 'Encontre-nos aqui!',
+        aboutus: 'Saiba mais sobre nós',
+        copy: 'Direitos autorais &copy; FalconShield 2024',
+        privacy: 'Política de Privacidade',
+        terms: 'Termos de Uso',
+        images: {
+            bronce: 'assets/img/portfolio/broncept.png',
+            premium: 'assets/img/portfolio/premiumpt.png',
+            gold: 'assets/img/portfolio/goldpt.png'
+        }
     }
 };
 
