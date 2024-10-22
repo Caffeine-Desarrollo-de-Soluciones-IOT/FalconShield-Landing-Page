@@ -43,17 +43,15 @@
                     <li class="nav-item"><a class="nav-link" href="#find" data-text="find">Find us here!</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about" data-text="about">About us</a></li>
                     <li class="nav-item">
-                        <div class="language-switch">
-                            <input type="radio" name="language" id="en" value="en" checked>
-                            <label for="en" class="switch-label">EN</label>
-                    
-                            <input type="radio" name="language" id="es" value="es">
-                            <label for="es" class="switch-label">ES</label>
-                    
-                            <input type="radio" name="language" id="pt" value="pt">
-                            <label for="pt" class="switch-label">PT</label>
-                    
-                            <span class="slider"></span>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                <img src="assets/img/internet.png" alt="Idioma" style="width: 30px; height: 30px;">
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="changeLanguage('en')">English</a>
+                                <a href="#" onclick="changeLanguage('es')">Español</a>
+                                <a href="#" onclick="changeLanguage('pt')">Português</a>
+                            </div>
                         </div>
                     </li>
                     <li class="nav-item">
