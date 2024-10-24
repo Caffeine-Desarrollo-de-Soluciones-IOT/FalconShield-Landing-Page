@@ -11745,7 +11745,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 element.style {
 }
 .bg-gradient-primary-to-secondary {
-  background: radial-gradient(circle, #ffffff 0%, #b1fe8e 34%) !important;
+  background: radial-gradient(circle, #FFF7E0  0%, #D6E6F2 34%) !important;
 }
 .text-center {
   text-align: center !important;
